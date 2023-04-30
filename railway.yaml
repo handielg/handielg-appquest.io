@@ -12,4 +12,4 @@ build:
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila --port 12345 app.ipynb
+  command: voila --port $RAILWAY_APP_PORT app.ipynb
