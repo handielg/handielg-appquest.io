@@ -1,15 +1,33 @@
 name: app
+
+ 
 env:
-  RAILWAY_APP_PORT: ${{ 12345 }}
+  RAILWAY_APP_PORT: 12345
 build:
-  steps:
-    - name: install python
-      image: railway/python
-      command:
-        - apt-get update
-        - apt-get install -y python3-pip
-    - name: install app dependencies
+  
+ 
+steps:
+    
+   
+- name: install python
+      
+     
+image: railway/python
+      
+     
+command:
+        
+       
+- apt-get update
+        
+       
+- apt-get install -y python3-pip
+    
+   
+- name: install app dependencies
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila --port $12345 app.ipynb
+  
+ 
+command: voila --port $RAILWAY_APP_PORT app.ipynb
