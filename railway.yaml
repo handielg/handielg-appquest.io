@@ -1,6 +1,6 @@
 name: app
 env:
-  RAILWAY_APP_PORT: ${{ RANDOM_PORT }}
+  RAILWAY_APP_PORT: ${{ 12345 }}
 build:
   steps:
     - name: install python
@@ -13,3 +13,5 @@ build:
         - pip3 install -r requirements.txt
 serve:
   command: voila --port $RAILWAY_APP_PORT app.ipynb
+  env:
+    RAILWAY_APP_PORT: 12345
