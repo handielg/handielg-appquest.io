@@ -1,6 +1,6 @@
 name: app
 env:
-  RAILWAY_APP_PORT: 8080
+  RAILWAY_APP_PORT: '8080'
 build:
   steps:
     - name: install python3
@@ -15,4 +15,5 @@ build:
 command: voila --no-browser --port $RAILWAY_APP_PORT app.ipynb
 env:
       PYTHONUNBUFFERED: '1'
+      RAILWAY_APP_PORT: '8080'
 
