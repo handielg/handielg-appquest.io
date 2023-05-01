@@ -1,9 +1,9 @@
 name: app
 env:
-  python3.8
+  RAILWAY_APP_PORT: 8000
 build:
   steps:
-    - name: install python3 and pip
+    - name: install python3
       image: railway/python
       command:
         - apt-get update
@@ -13,4 +13,5 @@ build:
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila --no-browser app.ipynb
+  command: voila --port $RAILWAY_APP_PORT app.ipynb
+
