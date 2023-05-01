@@ -8,10 +8,9 @@ build:
       command:
         - apt-get update
         - apt-get install -y python-pip3
-        - apt-get install -y voila
+        - pip3 voila
     - name: install app dependencies
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila app.ipynb
-  env: python3.8
+  command: voila --no-browser app.ipynb
