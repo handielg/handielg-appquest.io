@@ -1,1 +1,1 @@
-web: voila --port=8000 app.ipynb
+web: voila app.ipynb --port $PORT --no-browser --VoilaConfiguration.enable_nbextensions=True
