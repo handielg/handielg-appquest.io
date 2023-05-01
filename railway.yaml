@@ -7,7 +7,7 @@ build:
       image: railway/python
       command:
         - apt-get update
-        - apt-get install -y python3-pip3
+        - apt-get install -y python3-pip
     - name: install app dependencies
       command:
         - pip3 install -r requirements.txt
