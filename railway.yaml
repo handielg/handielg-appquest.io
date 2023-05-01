@@ -1,6 +1,6 @@
 name: app
 env:
-  RAILWAY_APP_PORT: app.run()
+  RAILWAY_APP_PORT: 8000
 build:
   steps:
     - name: install python3
