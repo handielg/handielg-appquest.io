@@ -12,6 +12,6 @@ build:
       command:
         - pip3 install -r requirements.txt
 serve:
-  #voila --no-browser app.ipynb
-  #command: voila --port $RAILWAY_APP_PORT app.ipynb
-  web: voila --port=8000 --no-browser app.ipynb
+ #voila --no-browser app.ipynb
+ command: voila --port $RAILWAY_APP_PORT app.ipynb
+ #web: voila --port=8000 --no-browser app.ipynb
