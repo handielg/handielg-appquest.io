@@ -1,6 +1,6 @@
 name: app
 env:
-  RAILWAY_APP_PORT: 8000
+  RAILWAY_APP_PORT: 8080
 build:
   steps:
     - name: install python3
@@ -13,5 +13,5 @@ build:
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila --port $RAILWAY_APP_PORT app.ipynb
+  command: voila app.ipynb --no-browser --port $RAILWAY_APP_PORT --VoilaConfiguration.enable_nbextensions=True --VoilaConfiguration.template=vuetify-default
 
