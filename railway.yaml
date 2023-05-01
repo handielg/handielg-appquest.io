@@ -12,6 +12,7 @@ build:
     - name: install app dependencies
       command:
         - pip3 install -r requirements.txt
-serve:
-  command: voila --no-browser --port $RAILWAY_APP_PORT app.ipynb
+command: voila --no-browser --port $RAILWAY_APP_PORT app.ipynb
+env:
+      PYTHONUNBUFFERED: '1'
 
