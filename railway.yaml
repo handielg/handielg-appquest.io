@@ -13,5 +13,5 @@ build:
       command:
         - pip3 install -r requirements.txt
 serve:
-  command: voila app.ipynb --no-browser --port $RAILWAY_APP_PORT --VoilaConfiguration.enable_nbextensions=True --VoilaConfiguration.template=vuetify-default
+  command: voila --port $RAILWAY_APP_PORT app.ipynb
 
