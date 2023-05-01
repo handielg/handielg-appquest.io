@@ -16,4 +16,7 @@ command: voila --no-browser --port $RAILWAY_APP_PORT app.ipynb
 env:
       PYTHONUNBUFFERED: '1'
       RAILWAY_APP_PORT: '8080'
+ports:
+     
+- '${RAILWAY_APP_PORT}:${RAILWAY_APP_PORT}'
 
