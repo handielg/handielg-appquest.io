@@ -4,7 +4,7 @@ env:
 build:
   steps:
     - name: install python3
-      image: railway/python
+      image: python3.8
       command:
         - apt-get update
         - apt-get install -y python3-pip
