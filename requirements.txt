@@ -22,7 +22,6 @@ bottle==0.12.25
 bottle-websocket==0.2.9
 branca==0.5.0
 cachetools==4.2.2
-certifi==2021.10.8
 cffi==1.15.1
 chardet==3.0.4
 charset-normalizer==2.0.12
@@ -76,7 +75,6 @@ h2==3.2.0
 h5py==3.7.0
 hazm==0.7.0
 hpack==3.0.0
-hstspreload==2022.10.1
 httpcore==0.9.1
 httplib2==0.20.4
 httpx==0.13.3
@@ -174,7 +172,6 @@ pyrsistent==0.18.1
 python-dateutil==2.8.2
 python-telegram-bot==13.11
 pyttsx3==2.90
-pytz==2022.1
 pytz-deprecation-shim==0.1.0.post0
 pywin32-ctypes==0.2.0
 pywinpty==2.0.6
@@ -195,7 +192,6 @@ singledispatch==3.7.0
 six==1.16.0
 sklearn==0.0
 sniffio==1.2.0
-soupsieve==2.3.2.post1
 SpeechRecognition==3.9.0
 stack-data==0.2.0
 statsmodels==0.13.5
