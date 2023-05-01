@@ -1,1 +1,1 @@
-web: voila app.ipynb --VoilaConfiguration.enable_nbextensions=True 
+web: voila app.ipynb --no-browser
