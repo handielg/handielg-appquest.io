@@ -176,7 +176,6 @@ python-telegram-bot==13.11
 pyttsx3==2.90
 pytz==2022.1
 pytz-deprecation-shim==0.1.0.post0
-pywin32==304
 pywin32-ctypes==0.2.0
 pywinpty==2.0.6
 pyxnat==1.5
