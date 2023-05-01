@@ -5,6 +5,7 @@ fpdf==1.7.2
 gTTS==2.2.4
 ipython==7.34.0
 ipywidgets==8.0.6
+ipykernel==6.22.0
 Markdown==3.4.1
 numpy==1.21.6
 pip==23.1.2
